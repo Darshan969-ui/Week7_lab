@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header{
+        width: 100%;
+        {{!-- max-width: 900px; --}}
+        height: 100px;
+        background-color: blue;
+        color: black;
+        padding:20px;
+        font-size:70px;
+        text-align: center;
+    }
+    main{
+        width: 100%;
+        {{!-- max-width: 900px; --}}
+        height: 60vh;
+        background-color: red;
+        color: black;
+        padding:20px;
+    
+    }
+    footer{
+        margin-top: 20px;
+        width: 100%;
+        {{!-- max-width: 900px; --}}
+        height: 100px;
+        background-color: lightblue;
+        color: black;
+        padding:20px;
+        font-size:70px;
+        text-align: center;
+    }
+</style>
+<body>
+    <header>
+        This is Header
+    </header>
+    <main>
+        {{{body}}}
+    </main>
+    <p>{{> welcome}}</p>
+    <footer>
+        This is Footer
+    </footer>
+</body>
+</html>
